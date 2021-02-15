@@ -1,0 +1,26 @@
+.navWrapper {
+    bottom: 0;
+    left: 0;
+    /* position: absolute; */
+    background: #1b242f;
+    border-bottom: 3px solid #04c2c9;
+    height: 50px;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+     align-items: center;
+    color: #fff;
+    
+}
+
+.pageLink {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.navContent{
+    display: flex;
+    max-width: 1200px;
+    
+}

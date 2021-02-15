@@ -1,0 +1,39 @@
+.contactWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #252934;
+    position: relative;
+    
+ }
+
+ .contactContent {
+    display: flex;
+     max-width: 1200px;
+ }
+
+
+ .svgcolorLight {
+    left: 0;
+    position: absolute;
+    top: 0;
+color: #f5f5f5;
+ }
+
+.title {
+ text-transform: uppercase;
+ color: #ffffff;
+ font-size: 30pt;
+ text-align: center;
+ margin-top: 180px;
+ font-weight: bold;
+}
+
+.lineUnderTitle {
+    background: #ffffff;
+    height: 4px;
+    margin: 25px auto 100px;
+    width: 70px;  
+    display: block;
+   justify-content: center;
+}
