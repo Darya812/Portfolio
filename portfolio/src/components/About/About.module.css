@@ -23,6 +23,6 @@
 }
 
 .aboutContent {
-    max-width: 1200px;
-    display: flex;
+    max-width: 1100px;
+    margin: auto;
 }

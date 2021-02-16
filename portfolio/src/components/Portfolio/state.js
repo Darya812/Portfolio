@@ -9,33 +9,43 @@ const state = {
     {
         id: '0',
         name: 'Weather App',
-        description: 'App - weather forecast',
-        img: weather
+        description: 'Three days weather forecast app with geolocation',
+        img: weather,
+        linkDemo: "https://darya812.github.io/fancy-weather/",
+        linkGithub: "https://github.com/Darya812/fancy-weather/tree/weather"
     },
     {
         id: '1',
         name: 'Raindrops Game',
-        description: 'A math simulator that allows you to consolidate the skills of arithmetic operations',
-        img: raindrop
+        description: 'A math simulator that allows you to consolidate the skills of arithmetic operations: addition, subtraction, multiplication and division',
+        img: raindrop,
+        linkDemo: "https://darya812.github.io/raindrops/",
+        linkGithub: "https://github.com/Darya812/raindrops/tree/game"
     },
     {
         id: '2',
         name: 'Drum kit',
-        description: 'hgflahgdsglf',
-        img: drum
+        description: 'A music application in which you can play sounds by pressing keys on the keyboard',
+        img: drum,
+        linkDemo: "https://darya812.github.io/Drum-Kit/",
+        linkGithub: "https://github.com/Darya812/Drum-Kit/tree/drum"
     },
    
     {
         id: '3',
         name: 'Flex Panel',
-        description: 'Beautiful animated image slider',
-        img: flex
+        description: 'JavaScript image slider',
+        img: flex,
+        linkDemo: "https://darya812.github.io/Flex-Panel-Gallery/",
+        linkGithub: "https://github.com/Darya812/Flex-Panel-Gallery/tree/flex-panel"
     },
     {
         id: '4',
         name: 'Simple Singolo',
-        description: 'Page by layout "Singolo"',
-        img: syngolo
+        description: 'kkjhdkuashfdkh;aohf',
+        img: syngolo,
+        linkDemo: "https://darya812.github.io/singolo/",
+        linkGithub: "https://github.com/Darya812/singolo/tree/singolo_branch"
     },
     
 

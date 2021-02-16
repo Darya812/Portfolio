@@ -6,13 +6,14 @@ import style from "./Project.module.css";
 const Project = (props) => {
     return (<div className={style.projectWrapper}>
       <div className={style.imgContainer}>
-        <img src={props.project.img} alt="photo" className="photo" width="300px"></img>
+        <img src={props.project.img} alt="photo" className="photo" width="100%"></img>
       </div>
-      <div className="projectDescription">
-      <div className='projectDescriptionTitle'>{props.project.name}</div>
+      <div className={style.projectDescription}>
+      <div className={style.projectDescriptionTitle}>{props.project.name}</div>
+      <div className={style.descriptionApp}>{props.project.description}</div>
          <div className={style.panelButtons}>
-        <button className={style.button}>DEMO</button>
-        <button className={style.button}>GitHub</button>
+         <a href={props.project.linkDemo}><div className={style.button}>DEMO</div></a>
+         <a href={props.project.linkGithub}><div className={style.button}>GitHub</div></a>
       </div>
       </div>
      

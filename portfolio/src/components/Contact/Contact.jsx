@@ -18,6 +18,10 @@ let Contact = (props) => {
       <div className={style.contactContent}>
       <div className={style.title}>contact</div>
       <div className={style.lineUnderTitle}></div>
+      <p>Have a question or want to work together?</p>
+      <div className={style.contactLinks}>
+        
+      </div>
     </div>
     </div>
   );
