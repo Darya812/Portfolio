@@ -6,21 +6,15 @@ let Greeting = (props) => {
     <div className={style.wrapper}>
       <div className={style.contentGreeting}>
         <div>
-        <p className={style.text}>
-          Hello, I'm <span className={style.textRed}>Darya Radzevich.</span>
-        </p>
+          <p className={style.text}>
+            Hello, I'm <span className={style.textRed}>Darya Radzevich.</span>
+          </p>
         </div>
-        
         <div>
-        <p className={style.text}>I'm a front end developer.</p>
+          <p className={style.text}>I'm a front end developer.</p>
+        </div>
+        <div className={style.button}>View my work</div>
       </div>
-      <div className={style.button}>
-        View my work
-        
-      </div>
-      </div>
-      
-     
     </div>
   );
 };

@@ -16,13 +16,25 @@ let Contact = (props) => {
         <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
       </svg>
       <div className={style.contactContent}>
-      <div className={style.title}>contact</div>
-      <div className={style.lineUnderTitle}></div>
-      <p>Have a question or want to work together?</p>
-      <div className={style.contactLinks}>
+        <div className={style.title}>contact</div>
+        <div className={style.lineUnderTitle}></div>
+        <p>Have a question or want to work together?</p>
+        <div className={style.contactLinks}>
+          <a href="mailto:ganocij1@gmail.com">
+            <div className={style.containerImg}>
+             
+           
+            </div>
+          </a>
+          <a>
+            <div className={style.containerImg}></div>
+          </a>
+          </div>
+        <div className={style.autor}>
+          DARYA RADZEVICH <span>&#169; 2021</span>
+        </div>
         
       </div>
-    </div>
     </div>
   );
 };

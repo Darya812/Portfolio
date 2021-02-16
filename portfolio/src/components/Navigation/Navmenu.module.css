@@ -1,26 +1,22 @@
 .navWrapper {
-    
-    background: #1b242f;
-    border-bottom: 3px solid #04c2c9;
-    height: 50px;
-        width: 100%;
-    z-index: 99;
-    display: flex;
-   
-    color: #fff;
-    
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  color: #fff;
 }
 
 .pageLink {
-    margin-right: 20px;
-    text-transform: uppercase;
+  margin-right: 20px;
+  text-transform: uppercase;
 }
 
-.navContent{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    max-width: 1100px;
-    margin: auto;
-      
+.navContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  max-width: 1100px;
+  margin: auto;
 }
