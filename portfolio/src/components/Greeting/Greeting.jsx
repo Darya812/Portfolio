@@ -2,8 +2,12 @@ import React from "react";
 import style from "./Greeting.module.css";
 
 let Greeting = (props) => {
+  function scrollPage(id) {
+    const elem = document.querySelector(id);
+      elem.scrollIntoView({block: "start", behavior: "smooth"});
+   } 
   return (
-    <div className={style.wrapper}>
+    <div id="greeting" className={style.wrapper}>
       <div className={style.contentGreeting}>
         <div>
           <p className={style.text}>
@@ -13,7 +17,7 @@ let Greeting = (props) => {
         <div>
           <p className={style.text}>I'm a front end developer.</p>
         </div>
-        <div className={style.button}>View my work</div>
+        <div className={style.button} onClick={()=>scrollPage("#about")}>View my work</div>
       </div>
     </div>
   );

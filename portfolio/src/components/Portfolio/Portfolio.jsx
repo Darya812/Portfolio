@@ -10,7 +10,7 @@ const addProject = (props) => {
 
 const Portfolio = (props) => {
   return (
-    <div className={style.portfolioWrapper}>
+    <div id="portfolio" className={style.portfolioWrapper}>
       <div className={style.portfolioContent}>
         <div className={style.title}>PROJECTS</div>
         <div className={style.lineUnderTitle}></div>

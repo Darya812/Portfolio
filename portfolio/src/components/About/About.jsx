@@ -1,18 +1,24 @@
 import React from "react";
 import style from "./About.module.css";
+import me from "./img/me.png";
 
 let About = (props) => {
   return (
-    <div className={style.aboutWrapper}>
+    <div id="about" className={style.aboutWrapper}>
       <div className={style.aboutContent}>
         <div className={style.title}>about</div>
         <div className={style.lineUnderTitle}></div>
-        <a href="https://github.com/Darya812">
-          <div className={style.conteinerImg}>
-            GitHub
-            {/* link  github */}
+        <div className={style.techSkills}>JS HTML CSS React</div>
+        <div className={style.containerAbout}>
+          <div className={style.picture}></div>
+          <div className={style.education}>
+            <h2>Education</h2>
+            <p>
+              Grodno State Agrarian University (economist), Grodno 2008-2012
+            </p>
+            <p>UpSkill Lab at Epam, Grodno 2020</p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,11 @@
 import React from "react";
 import style from "./Contact.module.css";
+import gmail from "./img/gmail.png"
+import github from "./img/github.png"
 
 let Contact = (props) => {
   return (
-    <div className={style.contactWrapper}>
+    <div id="contact" className={style.contactWrapper}>
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 100 102"
@@ -22,18 +24,24 @@ let Contact = (props) => {
         <div className={style.contactLinks}>
           <a href="mailto:ganocij1@gmail.com">
             <div className={style.containerImg}>
-             
-           
+              <img
+                src={gmail}
+                width="30px"
+              ></img>
             </div>
           </a>
-          <a>
-            <div className={style.containerImg}></div>
+          <a href="https://github.com/Darya812">
+            <div className={style.containerImg}>
+              <img
+                src={github}
+                width="30px"
+              ></img>
+            </div>
           </a>
-          </div>
-        <div className={style.autor}>
-          DARYA RADZEVICH <span>&#169; 2021</span>
         </div>
-        
+        <div className={style.autor}>
+          DARYA RADZEVICH <span>© 2021</span>
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,12 @@
 .contactContent p {
   color: #04c2c9;
   margin-bottom: 50px;
+  transition: 0.5s;
   }
+
+  .contactContent p:hover {
+    color:  #e31b6d;
+        }
 
 .svgcolorLight {
   left: 0;
@@ -52,6 +57,7 @@ font-size: small;
 
 .autor span{
   color: #e31b6d;
+  font-size: 15px;
  
  
 }
@@ -60,7 +66,9 @@ font-size: small;
     cursor: pointer;
     height: 55px;
     margin: 0 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.5s;
     width: 55px;
     border: 5px #262f38 solid;
@@ -79,4 +87,9 @@ font-size: small;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.containerImg img {
+  filter: invert();
+
 }
