@@ -10,8 +10,8 @@ function App(props) {
   return (
     <div>
       <Greeting></Greeting>
-      <Navmenu></Navmenu>
-      <About></About>
+      <Navmenu ></Navmenu>
+      <About ></About>
       <Portfolio projects={props.state.projects}></Portfolio>
       <Contact></Contact>
     </div>

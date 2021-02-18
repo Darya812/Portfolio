@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Greeting from "../Greeting/Greeting";
 import style from "./Navmenu.module.css";
 
 let Navmenu = (props) => {
@@ -10,44 +11,34 @@ let Navmenu = (props) => {
     elem.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
-  function removeColorNav() {
-    const greetingNav = document.querySelector("#greetingNav");
-    const aboutNav = document.querySelector("#aboutNav");
-    const portfolioNav = document.querySelector("#portfolioNav");
-    const contactNav = document.querySelector("#contactNav");
-    greetingNav.classList.remove(`${style.activeLink}`);
-    aboutNav.classList.remove(`${style.activeLink}`);
-    portfolioNav.classList.remove(`${style.activeLink}`);
-    contactNav.classList.remove(`${style.activeLink}`);
-  }
-
-  function addColorNav(id) {
-    removeColorNav();
-    const elem = document.querySelector(id);
-    elem.classList.add(`${style.activeLink}`);
-  }
-
-  window.addEventListener("scroll", () => {
-    let id;
+function scrollListener(params) {
+  let id;
+  const greetingNav= document.querySelector('#greeting');
+  const portfolioNav= document.querySelector('#portfolio');
+  const aboutNav= document.querySelector('#about');
+  const contactNav= document.querySelector('#contact');
     let scrollH = window.pageYOffset;
     console.log(scrollH);
-    if (scrollH <= 772) {
-      id = "#greetingNav";
-    } else if (scrollH >= 773 && scrollH < 1693) {
-      id = "#aboutNav";
-    } else if (scrollH >= 1694 && scrollH < 3780) {
-      id = "#portfolioNav";
+    if (scrollH < aboutNav.offsetTop ) {
+      id = "#greeting";
+    } else if (scrollH >= aboutNav.offsetTop && scrollH < portfolioNav.offsetTop) {
+      id = "#about";
+    } else if (scrollH >= portfolioNav.offsetTop && scrollH < contactNav.offsetTop) {
+      id = "#portfolio";
     } else {
-      id = "#contactNav";
+      id = "#contact";
     }
-    addColorNav(id);
+    setSection(id);
+}
+
+  window.addEventListener("scroll", ()=>{
+    scrollListener();
   });
 
   return (
     <div id="navbar" className={style.navWrapper}>
       <div className={style.navContent}>
         <div
-          id="greetingNav"
           className={`${style.pageLink} ${
             section === "#greeting" ? style.activeLink : ""
           }`}
@@ -56,7 +47,6 @@ let Navmenu = (props) => {
           home
         </div>
         <div
-          id="aboutNav"
           className={`${style.pageLink} ${
             section === "#about" ? style.activeLink : ""
           }`}
@@ -65,7 +55,6 @@ let Navmenu = (props) => {
           about
         </div>
         <div
-          id="portfolioNav"
           className={`${style.pageLink} ${
             section === "#portfolio" ? style.activeLink : ""
           }`}
@@ -74,7 +63,6 @@ let Navmenu = (props) => {
           portfolio
         </div>
         <div
-          id="contactNav"
           className={`${style.pageLink} ${
             section === "#contact" ? style.activeLink : ""
           }`}
