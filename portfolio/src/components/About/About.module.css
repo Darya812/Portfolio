@@ -27,19 +27,6 @@
   margin: auto;
 }
 
-
-/* -------anim text------ */
-
-/* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #000;
-} */
-
 .techSkills {
   text-transform: uppercase;
   font-size: 55px;
@@ -47,57 +34,154 @@
   letter-spacing: 3px;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(80deg, #04c2c9,  #e31b6d, #04c2c9);
-   background-size: 80%;
+  background: linear-gradient(80deg, #04c2c9, #e31b6d, #04c2c9);
+  background-size: 80%;
   animation: animate 5s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   margin-bottom: 70px;
-  
 }
 
 @keyframes animate {
   0% {
-    background-position:  -500%;
+    background-position: -500%;
   }
-   100% {
+  100% {
     background-position: 500%;
   }
+}
+
+.containerAbout {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.education {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.education h2 {
+  font-size: 40px;
+  color: #444649;
+  font-weight: bold;
+}
+
+.education p {
+  font-size: 20px;
+}
+
+.picture {
+  width: 40%;
+  height: 450px;
+  background-image: url("./img/me.png");
+  background-size: cover;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  box-shadow: 0 0 15px #444649;
+  margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .techSkills {
+    font-size: 47px;
+    margin-bottom: 30px;
   }
 
   .containerAbout {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-  
+    margin-bottom: 70px;
   }
 
   .education {
-    width: 60%;
-    text-align: center;
+    width: 50%;
+  }
+
+  .education p {
+    margin: 15px 5px;
+  }
+
+  .picture {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 25pt;
+    margin-top: 60px;
+  }
+
+  .lineUnderTitle {
+    margin: 25px auto 25px;
+  }
+
+  .techSkills {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .containerAbout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .education {
+    width: 100%;
   }
   .education h2 {
-    font-size: 40px;
-    color: #444649;
-    font-weight: bold;
+    font-size: 35px;
   }
 
   .education p {
     font-size: 20px;
-        
+    margin: 5px 5px;
   }
 
+  .picture {
+    width: 90%;
+    height: 450px;
+    margin: auto;
+  }
+}
 
- .picture {
-      width: 40%;
-   height: 450px;
-   background-image: url("./img/me.png");
-   background-size: cover;
-   border-top-left-radius: 200px;
-border-bottom-right-radius: 200px;
-box-shadow: 0 0 15px #444649;
- }
+@media (max-width: 400px) {
+  .title {
+    font-size: 20pt;
+    margin-top: 60px;
+  }
+
+  .lineUnderTitle {
+    margin: 25px auto 25px;
+  }
+
+  .techSkills {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .containerAbout {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .education {
+    width: 100%;
+  }
+  .education h2 {
+    font-size: 35px;
+  }
+
+  .education p {
+    font-size: 20px;
+    margin: 5px auto;
+  }
+
+  .picture {
+    width: 90%;
+    height: 350px;
+  }
+}

@@ -15,11 +15,12 @@
   color: #04c2c9;
   margin-bottom: 50px;
   transition: 0.5s;
-  }
+  font-size: 25px;
+}
 
-  .contactContent p:hover {
-    color:  #e31b6d;
-        }
+.contactContent p:hover {
+  color: #e31b6d;
+}
 
 .svgcolorLight {
   left: 0;
@@ -47,40 +48,36 @@
 }
 
 .autor {
-color: #ffffff;
-opacity: 0.5;
-display: flex;
-justify-content: center;
-margin: 30px auto 40px;
-font-size: small;
+  color: #ffffff;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 80px;
+  font-size: 25px;
 }
 
-.autor span{
+.autor span {
   color: #e31b6d;
-  font-size: 15px;
- 
- 
+  font-size: 25px;
 }
 .containerImg {
-   background: #262f38;
-    cursor: pointer;
-    height: 55px;
-    margin: 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-    width: 55px;
-    border: 5px #262f38 solid;
-   
+  background: #262f38;
+  cursor: pointer;
+  height: 55px;
+  margin: 20px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  width: 55px;
+  border: 5px #262f38 solid;
 }
 
 .containerImg:hover {
   background: #04c2c9;
   height: 55px;
   width: 55px;
-  border:  solid 5px #252934;
-
+  border: solid 5px #252934;
 }
 
 .contactLinks {
@@ -91,5 +88,104 @@ font-size: small;
 
 .containerImg img {
   filter: invert();
+}
 
+@media (max-width: 600px) {
+  .title {
+    font-size: 25pt;
+    margin-top: 200px;
+  }
+
+  .lineUnderTitle {
+    margin: 25px auto 25px;
+  }
+
+  .contactContent p {
+    margin: 50px 5px 50px 5px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .autor {
+    margin: 60px auto 80px;
+    font-size: 15px;
+  }
+
+  .autor span {
+    color: #e31b6d;
+    font-size: 15px;
+  }
+  .containerImg {
+    height: 55px;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    width: 55px;
+    border: 5px #262f38 solid;
+  }
+
+  .containerImg:hover {
+    background: #04c2c9;
+    height: 55px;
+    width: 55px;
+    border: solid 5px #252934;
+  }
+
+  .contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 20pt;
+    margin-top: 200px;
+  }
+
+  .lineUnderTitle {
+    margin: 25px auto 25px;
+  }
+
+  .contactContent p {
+    margin: 50px 5px 50px 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .autor {
+    margin: 60px auto 80px;
+    font-size: 15px;
+  }
+
+  .autor span {
+    color: #e31b6d;
+    font-size: 15px;
+  }
+  .containerImg {
+    height: 55px;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    width: 55px;
+    border: 5px #262f38 solid;
+  }
+
+  .containerImg:hover {
+    background: #04c2c9;
+    height: 55px;
+    width: 55px;
+    border: solid 5px #252934;
+  }
+
+  .contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }

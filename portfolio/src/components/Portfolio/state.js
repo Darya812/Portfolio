@@ -45,7 +45,7 @@ const state = {
     {
       id: "4",
       name: "Simple Singolo",
-      description: "kkjhdkuashfdkh;aohf",
+      description: "Responsive web application",
       img: syngolo,
       linkDemo: "https://darya812.github.io/singolo/",
       linkGithub: "https://github.com/Darya812/singolo/tree/singolo_branch",

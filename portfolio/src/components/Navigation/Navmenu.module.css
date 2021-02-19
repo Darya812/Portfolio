@@ -7,7 +7,7 @@
   display: flex;
   color: #fff;
   position: sticky;
-    top: 0;
+  top: 0;
 }
 
 .pageLink {
@@ -29,8 +29,13 @@
   margin: auto;
 }
 
-
-
 .activeLink {
   color: #e31b6d;
+}
+
+@media (max-width: 400px) {
+  .pageLink {
+    margin-right: 10px;
+    font-size: 15px;
+  }
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Greeting from "../Greeting/Greeting";
 import style from "./Navmenu.module.css";
 
 let Navmenu = (props) => {
@@ -11,27 +10,33 @@ let Navmenu = (props) => {
     elem.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
-function scrollListener(params) {
-  let id;
-  const greetingNav= document.querySelector('#greeting');
-  const portfolioNav= document.querySelector('#portfolio');
-  const aboutNav= document.querySelector('#about');
-  const contactNav= document.querySelector('#contact');
+  function scrollListener(params) {
+    let id;
+    const greetingNav = document.querySelector("#greeting");
+    const portfolioNav = document.querySelector("#portfolio");
+    const aboutNav = document.querySelector("#about");
+    const contactNav = document.querySelector("#contact");
     let scrollH = window.pageYOffset;
     console.log(scrollH);
-    if (scrollH < aboutNav.offsetTop ) {
+    if (scrollH < aboutNav.offsetTop) {
       id = "#greeting";
-    } else if (scrollH >= aboutNav.offsetTop && scrollH < portfolioNav.offsetTop) {
+    } else if (
+      scrollH >= aboutNav.offsetTop &&
+      scrollH < portfolioNav.offsetTop
+    ) {
       id = "#about";
-    } else if (scrollH >= portfolioNav.offsetTop && scrollH < contactNav.offsetTop) {
+    } else if (
+      scrollH >= portfolioNav.offsetTop &&
+      scrollH < contactNav.offsetTop
+    ) {
       id = "#portfolio";
     } else {
       id = "#contact";
     }
     setSection(id);
-}
+  }
 
-  window.addEventListener("scroll", ()=>{
+  window.addEventListener("scroll", () => {
     scrollListener();
   });
 

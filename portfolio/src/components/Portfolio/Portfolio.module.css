@@ -27,3 +27,27 @@
   display: block;
   justify-content: center;
 }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 25pt;
+    margin-top: 60px;
+  }
+
+  .lineUnderTitle {
+    margin: 25px auto 25px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 20pt;
+    margin-top: 60px;
+  }
+
+  .lineUnderTitle {
+    margin: 25px auto 25px;
+  }
+}
+
