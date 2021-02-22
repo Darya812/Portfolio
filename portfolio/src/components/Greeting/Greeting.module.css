@@ -19,11 +19,6 @@
   position: relative;
 }
 
-.textRed {
-  margin: 0;
-  color: #e31b6d;
-}
-
 .text {
   display: inline-block;
   justify-content: center;
@@ -31,6 +26,11 @@
   margin: 0;
   color: #fff;
   vertical-align: middle;
+}
+
+.textRed {
+  margin: 0;
+  color: #e31b6d;
 }
 
 .button {
