@@ -4,13 +4,17 @@ import Project from "./Project/Project";
 
 const addProject = (props) => {
   return props.map((project) => {
-    return <Project project={project} />;
+    return <Project project={project} key={project.id} />;
   });
 };
 
 const Portfolio = (props) => {
   return (
-    <div id="portfolio" className={style.portfolioWrapper}>
+    <div
+      ref={props.portfolio}
+      id="portfolio"
+      className={style.portfolioWrapper}
+    >
       <div className={style.portfolioContent}>
         <div className={style.title}>PROJECTS</div>
         <div className={style.lineUnderTitle}></div>

@@ -3,15 +3,9 @@ import Particles from "react-particles-js";
 import style from "./Greeting.module.css";
 import "./Greeting.module.css";
 
-let Greeting = (props) => {
-
-  function scrollPage(id) {
-    const elem = document.querySelector(id);
-    elem.scrollIntoView({ block: "start", behavior: "smooth" });
-  }
-
+const Greeting = ({ greeting, scrollPage, about }) => {
   return (
-    <div id="greeting" className={style.wrapper}>
+    <div ref={greeting} className={style.wrapper}>
       <Particles
         id="particles-js"
         params={{
@@ -85,7 +79,7 @@ let Greeting = (props) => {
         <div>
           <p className={style.text}>I'm a front end developer.</p>
         </div>
-        <div className={style.button} onClick={() => scrollPage("#about")}>
+        <div className={style.button} onClick={() => scrollPage(about)}>
           View my work
         </div>
       </div>

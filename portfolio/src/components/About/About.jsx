@@ -2,9 +2,9 @@ import React from "react";
 import style from "./About.module.css";
 import me from "./img/me.png";
 
-let About = (props) => {
+const About = ({ about }) => {
   return (
-    <div id="about" className={style.aboutWrapper}>
+    <div ref={about} className={style.aboutWrapper}>
       <div className={style.aboutContent}>
         <div className={style.title}>about</div>
         <div className={style.lineUnderTitle}></div>

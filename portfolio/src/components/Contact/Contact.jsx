@@ -3,9 +3,9 @@ import style from "./Contact.module.css";
 import gmail from "./img/gmail.png";
 import github from "./img/github.png";
 
-let Contact = (props) => {
+const Contact = ({ contact }) => {
   return (
-    <div id="contact" className={style.contactWrapper}>
+    <div ref={contact} id="contact" className={style.contactWrapper}>
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 100 102"
