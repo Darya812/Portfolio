@@ -5,7 +5,7 @@ import github from "./img/github.png";
 
 const Contact = ({ contact }) => {
   return (
-    <div ref={contact} id="contact" className={style.contactWrapper}>
+    <div ref={contact} className={style.contactWrapper}>
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 100 102"

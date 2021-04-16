@@ -1,59 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import style from "./Navmenu.module.css";
 
-const Navmenu = ({ scrollPage, about, greeting, contact, portfolio }) => {
-  const section = null;
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', scrollListener);
-
-  //    return () => {
-  //     window.removeEventListener('scroll', scrollListener);
-  //   };
-  // }, []);
-
-  // function scrollPage(id) {
-  //   setSection(id);
-  //   const elem = document.querySelector(id);
-  //   elem.scrollIntoView({ block: "start", behavior: "smooth" });
-  // }
-
-  // function scrollListener(params) {
-  //   let id;
-  //   const greetingNav = document.querySelector("#greeting");
-  //   const portfolioNav = document.querySelector("#portfolio");
-  //   const aboutNav = document.querySelector("#about");
-  //   const contactNav = document.querySelector("#contact");
-  //   let scrollH = window.pageYOffset;
-  //   console.log(scrollH);
-  //   if (scrollH < aboutNav.offsetTop) {
-  //     id = "#greeting";
-  //   } else if (
-  //     scrollH >= aboutNav.offsetTop &&
-  //     scrollH < portfolioNav.offsetTop
-  //   ) {
-  //     id = "#about";
-  //   } else if (
-  //     scrollH >= portfolioNav.offsetTop &&
-  //     scrollH < contactNav.offsetTop
-  //   ) {
-  //     id = "#portfolio";
-  //   } else {
-  //     id = "#contact";
-  //   }
-  //   setSection(id);
-  // }
-
-  // window.addEventListener("scroll", () => {
-  //   scrollListener();
-  // });
-
-  return (
-    <div id="navbar" className={style.navWrapper}>
+const Navmenu = ({ scrollPage, about, greeting, contact, portfolio, section }) => {
+  
+    return (
+    <div className={style.navWrapper}>
       <div className={style.navContent}>
         <div
           className={`${style.pageLink} ${
-            section === "#greeting" ? style.activeLink : ""
+            section === greeting ? style.activeLink : ""
           }`}
           onClick={() => scrollPage(greeting)}
         >
@@ -61,7 +16,7 @@ const Navmenu = ({ scrollPage, about, greeting, contact, portfolio }) => {
         </div>
         <div
           className={`${style.pageLink} ${
-            section === "#about" ? style.activeLink : ""
+            section === about ? style.activeLink : ""
           }`}
           onClick={() => scrollPage(about)}
         >
@@ -69,7 +24,7 @@ const Navmenu = ({ scrollPage, about, greeting, contact, portfolio }) => {
         </div>
         <div
           className={`${style.pageLink} ${
-            section === "#portfolio" ? style.activeLink : ""
+            section === portfolio ? style.activeLink : ""
           }`}
           onClick={() => scrollPage(portfolio)}
         >
@@ -77,7 +32,7 @@ const Navmenu = ({ scrollPage, about, greeting, contact, portfolio }) => {
         </div>
         <div
           className={`${style.pageLink} ${
-            section === "#contact" ? style.activeLink : ""
+            section === contact ? style.activeLink : ""
           }`}
           onClick={() => scrollPage(contact)}
         >

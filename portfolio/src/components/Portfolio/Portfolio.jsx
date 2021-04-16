@@ -12,7 +12,6 @@ const Portfolio = (props) => {
   return (
     <div
       ref={props.portfolio}
-      id="portfolio"
       className={style.portfolioWrapper}
     >
       <div className={style.portfolioContent}>

@@ -13,7 +13,7 @@
 
 .contactContent p {
   color: #04c2c9;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   transition: 0.5s;
   font-size: 25px;
 }
@@ -34,14 +34,14 @@
   color: #ffffff;
   font-size: 30pt;
   text-align: center;
-  margin-top: 180px;
+  margin-top: 190px;
   font-weight: bold;
 }
 
 .lineUnderTitle {
   background: #ffffff;
   height: 4px;
-  margin: 25px auto 50px;
+  margin: 30px auto 55px;
   width: 70px;
   display: block;
   justify-content: center;
@@ -52,7 +52,7 @@
   opacity: 0.5;
   display: flex;
   justify-content: center;
-  margin: 60px auto 80px;
+  margin: 65px auto 85px;
   font-size: 25px;
 }
 
@@ -64,7 +64,7 @@
   background: #262f38;
   cursor: pointer;
   height: 55px;
-  margin: 20px 15px;
+  margin: 25px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@
 @media (max-width: 600px) {
   .title {
     font-size: 25pt;
-    margin-top: 200px;
+    margin-top: 210px;
   }
 
   .lineUnderTitle {
