@@ -19,13 +19,14 @@
   font-weight: bold;
 }
 
-.lineUnderTitle {
+.title::after {
   background: #444649;
   height: 4px;
   margin: 25px auto 100px;
   width: 70px;
   display: block;
   justify-content: center;
+  content: '';
 }
 
 @media (max-width: 600px) {
@@ -34,7 +35,7 @@
     margin-top: 60px;
   }
 
-  .lineUnderTitle {
+  .title::after {
     margin: 25px auto 25px;
   }
 }
@@ -46,7 +47,7 @@
     margin-top: 60px;
   }
 
-  .lineUnderTitle {
+  .title::after {
     margin: 25px auto 25px;
   }
 }

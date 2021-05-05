@@ -1,0 +1,21 @@
+.pageLink {
+  margin-right: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+.pageLink:hover {
+  color: #e31b6d;
+}
+.activeLink {
+  color: #e31b6d;
+}
+
+@media (max-width: 400px) {
+  .pageLink {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+}

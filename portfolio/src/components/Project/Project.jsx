@@ -1,27 +1,27 @@
 import React from "react";
 import style from "./Project.module.css";
 
-const Project = (props) => {
+const Project = ({img, name, description, linkDemo, linkGithub}) => {
   return (
     <div className={style.projectWrapper}>
       <div className={style.imgContainer}>
         <img
-          src={props.project.img}
+          src={img}
           alt="photo"
           className="photo"
           width="100%"
-        ></img>
+        />
       </div>
       <div className={style.projectDescription}>
         <div className={style.projectDescriptionTitle}>
-          {props.project.name}
+          {name}
         </div>
-        <div className={style.descriptionApp}>{props.project.description}</div>
+        <div className={style.descriptionApp}>{description}</div>
         <div className={style.panelButtons}>
-          <a href={props.project.linkDemo}>
+          <a href={linkDemo}>
             <div className={style.button}>DEMO</div>
           </a>
-          <a href={props.project.linkGithub}>
+          <a href={linkGithub}>
             <div className={style.button}>GitHub</div>
           </a>
         </div>

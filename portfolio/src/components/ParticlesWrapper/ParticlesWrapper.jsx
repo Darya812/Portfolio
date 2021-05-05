@@ -1,13 +1,12 @@
-import React from "react";
 import Particles from "react-particles-js";
-import style from "./Greeting.module.css";
-import "./Greeting.module.css";
 
-const Greeting = ({ greeting, scrollPage, about }) => {
+import style from "./ParticlesWrapper.module.css";
+
+const ParticlesWrapper = (props) => {
   return (
-    <div ref={greeting} className={style.wrapper}>
+    <div>
       <Particles
-        id="particles-js"
+        className={style.particles}
         params={{
           particles: {
             number: { value: 379, density: { enable: true, value_area: 800 } },
@@ -69,22 +68,10 @@ const Greeting = ({ greeting, scrollPage, about }) => {
           },
           retina_detect: true,
         }}
-      ></Particles>
-      <div className={style.contentGreeting}>
-        <div>
-          <p className={style.text}>
-            Hello, I'm <span className={style.textRed}>Darya Radzevich.</span>
-          </p>
-        </div>
-        <div>
-          <p className={style.text}>I'm a front end developer.</p>
-        </div>
-        <div className={style.button} onClick={() => scrollPage(about)}>
-          View my work
-        </div>
-      </div>
+      />
+      {props.children}
     </div>
   );
 };
 
-export default Greeting;
+export default ParticlesWrapper;

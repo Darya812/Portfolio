@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Greeting from "./components/Greeting/Greeting.jsx";
+import Introduction from "./components/Introduction/Introduction";
 import Navmenu from "./components/Navigation/Navmenu";
+import ParticlesWrapper from "./components/ParticlesWrapper/ParticlesWrapper";
 import Portfolio from "./components/Portfolio/Portfolio";
 
-function App(props) {
+function App() {
   const about = React.useRef();
   const contact = React.useRef();
   const greeting = React.useRef();
@@ -48,11 +49,13 @@ function App(props) {
 
   return (
     <div>
-      <Greeting
-        about={about}
-        scrollPage={scrollPage}
-        greeting={greeting}
-      ></Greeting>
+      <ParticlesWrapper>
+        <Introduction
+          about={about}
+          scrollPage={scrollPage}
+          greeting={greeting}
+        />
+      </ParticlesWrapper>
       <Navmenu
         section={section}
         contact={contact}
@@ -60,13 +63,10 @@ function App(props) {
         greeting={greeting}
         about={about}
         scrollPage={scrollPage}
-      ></Navmenu>
-      <About about={about}></About>
-      <Portfolio
-        portfolio={portfolio}
-        projects={props.state.projects}
-      ></Portfolio>
-      <Contact contact={contact}></Contact>
+      />
+      <About about={about} />
+      <Portfolio portfolio={portfolio} />
+      <Contact contact={contact} />
     </div>
   );
 }

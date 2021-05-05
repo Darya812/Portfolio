@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import state from "./components/Portfolio/state.js";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
    <React.StrictMode>
-       <App state={state}/>
+       <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

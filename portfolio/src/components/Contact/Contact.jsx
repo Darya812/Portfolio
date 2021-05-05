@@ -1,40 +1,37 @@
 import React from "react";
 import style from "./Contact.module.css";
-import gmail from "./img/gmail.png";
-import github from "./img/github.png";
+import gmail from "../../images/gmail.png";
+import github from "../../images/github.png";
+import TriangleIcon from "../TriangleIcon/TriangleIcon";
+
+const contacts = {
+  email: "mailto:ganocij1@gmail.com",
+  github: "https://github.com/Darya812",
+};
 
 const Contact = ({ contact }) => {
+  const year = new Date();
+
   return (
     <div ref={contact} className={style.contactWrapper}>
-      <svg
-        preserveAspectRatio="none"
-        viewBox="0 0 100 102"
-        height="75"
-        width="100%"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        className={style.svgcolorLight}
-      >
-        <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
-      </svg>
+      <TriangleIcon />
       <div className={style.contactContent}>
         <div className={style.title}>contact</div>
-        <div className={style.lineUnderTitle}></div>
         <p>Have a question or want to work together?</p>
         <div className={style.contactLinks}>
-          <a href="mailto:ganocij1@gmail.com">
+          <a href={contacts.email}>
             <div className={style.containerImg}>
-              <img src={gmail} width="30px"></img>
+              <img src={gmail} width="30px" />
             </div>
           </a>
-          <a href="https://github.com/Darya812">
+          <a href={contacts.github}>
             <div className={style.containerImg}>
-              <img src={github} width="30px"></img>
+              <img src={github} width="30px" />
             </div>
           </a>
         </div>
         <div className={style.autor}>
-          DARYA RADZEVICH <span>© 2021</span>
+          DARYA RADZEVICH <span>© {year.getFullYear()}</span>
         </div>
       </div>
     </div>
