@@ -1,12 +1,13 @@
 import React from "react";
 import style from "./Portfolio.module.css";
-import Project from "../Project/Project";
+import Project from "../Project";
 
 import raindrop from "../../images/raindrop.png";
 import weather from "../../images/weather.png";
 import syngolo from "../../images/syngolo.png";
 import flex from "../../images/flex.png";
 import drum from "../../images/drum.png";
+import snapShot from "../../images/snap_shot.png";
 
 const projects = [
   {
@@ -52,6 +53,14 @@ const projects = [
     img: syngolo,
     linkDemo: "https://darya812.github.io/singolo/",
     linkGithub: "https://github.com/Darya812/singolo/tree/singolo_branch",
+  },
+  {
+    id: "5",
+    name: "Snap-Shot",
+    description: "Snap Shot is a gallery created using React,React Hooks.",
+    img: snapShot,
+    linkDemo: "https://optimistic-bardeen-48361e.netlify.app/",
+    linkGithub: "https://github.com/Darya812/Snap-Shot/tree/master",
   },
 ];
 

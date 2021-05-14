@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./TriangleIcon.jsx"
+import style from "./TriangleIcon.module.css"
 
 const TriangleIcon = () => {
   return (

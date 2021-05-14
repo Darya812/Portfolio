@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Introduction from "./components/Introduction/Introduction";
-import Navmenu from "./components/Navigation/Navmenu";
-import ParticlesWrapper from "./components/ParticlesWrapper/ParticlesWrapper";
-import Portfolio from "./components/Portfolio/Portfolio";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Introduction from "./components/Introduction";
+import Navmenu from "./components/Navigation";
+import ParticlesWrapper from "./components/ParticlesWrapper";
+import Portfolio from "./components/Portfolio";
 
 function App() {
-  const about = React.useRef();
-  const contact = React.useRef();
-  const greeting = React.useRef();
-  const portfolio = React.useRef();
+  const about = useRef();
+  const contact = useRef();
+  const greeting = useRef();
+  const portfolio = useRef();
 
   const [section, setSection] = useState(greeting);
 

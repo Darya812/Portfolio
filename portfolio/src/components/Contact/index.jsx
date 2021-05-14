@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Contact.module.css";
 import gmail from "../../images/gmail.png";
 import github from "../../images/github.png";
-import TriangleIcon from "../TriangleIcon/TriangleIcon";
+import TriangleIcon from "../TriangleIcon";
 
 const contacts = {
   email: "mailto:ganocij1@gmail.com",
